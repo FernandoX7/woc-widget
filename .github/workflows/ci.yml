@@ -13,7 +13,7 @@ jobs:
     runs-on: macos-15
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Select Xcode
         run: sudo xcode-select --switch /Applications/Xcode.app
       - name: Run complete non-launching verification
