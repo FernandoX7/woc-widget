@@ -1,8 +1,10 @@
 # Verification
 
-`./scripts/verify.sh` is the deterministic production gate. It runs the WoCKit unit tests, checks
-every Swift source, builds preview and production bundles, validates signing/resources, and (unless
-explicitly skipped) samples the closed-popover process. It also enforces two source-level contracts:
+`./scripts/verify.sh` is the deterministic production gate. It checks the source-install
+prerequisites, runs the WoCKit unit tests, checks every Swift source, builds preview and production
+bundles, validates local signing/resources, and (unless explicitly skipped) samples the
+closed-popover process. It does not replace an app in `/Applications` or `~/Applications`. It also
+enforces two source-level contracts:
 
 - `Sources/WoCKit` cannot import SwiftUI, AppKit, or Charts. This keeps the domain package
   headlessly testable and prevents a UI dependency from crossing the module boundary unnoticed.
@@ -26,4 +28,5 @@ Because network availability is nondeterministic, this script is intentionally a
 push CI. `.github/workflows/live-api-contracts.yml` runs it daily on the default branch and exposes a
 manual workflow trigger. A scheduled failure therefore signals upstream downtime or schema drift
 without blocking unrelated development. Maintainers still run and investigate it before a public
-release, while distinguishing an upstream outage from a real contract change.
+source tag or optional binary candidate, while distinguishing an upstream outage from a real
+contract change.

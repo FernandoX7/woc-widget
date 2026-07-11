@@ -6,17 +6,24 @@ player count + `$WOC` price (the spot price in the menu-bar label/header, plus a
 project**, WidgetKit target, or Dock app—the product is the menu-bar app only, with raw `swiftc`
 driven by `build.sh`. The deployment floor is macOS 14.0 — consistent across
 `build.sh` (`-target <arch>-apple-macos14.0`), `Info.plist` (`LSMinimumSystemVersion` 14.0), and
-`Package.swift` (`.macOS("14.0")`); the built binary's `minos` reads 14.0. Public architecture,
-preview, privacy, contribution, and release guidance lives under `docs/` and in the root public
-policy files; this document keeps maintainer-only implementation invariants.
+`Package.swift` (`.macOS("14.0")`); the built binary's `minos` reads 14.0. Public installation,
+architecture, preview, privacy, contribution, and optional distribution guidance lives under
+`docs/` and in the root public policy files; this document keeps maintainer-only implementation
+invariants.
 
 ## Build, test, run
-- `./build.sh` — compile all `Sources/**/*.swift`, ad-hoc sign, and **install to
-  `/Applications/WoC Player Count.app`** (the `build/` bundle is *moved*, not copied, so there's
-  exactly one copy — always the latest — and no Spotlight/Launchpad duplicate). This is the
-  source of truth for "does it build", NOT the LSP/IDE.
-- `./build.sh run` — build + install, then kill any running instance and relaunch the
-  `/Applications` copy (the running app is always the latest).
+- `./install.sh` — public source-install entry point. It checks macOS 14+, full Xcode tooling, and
+  repository resources before delegating to `./build.sh run`. It never needs or reads a paid Apple
+  developer account, distribution identity, or notarization credential.
+- `./build.sh` — compile all `Sources/**/*.swift`, ad-hoc sign, and install. It prefers
+  `/Applications/WoC Player Count.app`, falls back to `~/Applications/WoC Player Count.app` for a
+  standard account only when no system copy exists, and fails rather than creating an ambiguous
+  duplicate when neither destination is safe. `WOC_INSTALL_DIR` can specify an absolute destination
+  and intentionally disables fallback. Installation stages and verifies the new bundle, swaps it
+  transactionally, and rolls back a failed activation. This is the source of truth for "does it
+  build", NOT the LSP/IDE.
+- `./build.sh run` — build + install, then kill any running instance and relaunch the exact path
+  selected by the installer (the running app is always the newly built copy).
 - `./build.sh bundle` — optimized production bundle kept under `build/`, with no install or launch.
 - `./build.sh preview` — windowed build (`-DPREVIEW`): a `WindowGroup` instead of
   `MenuBarExtra`, seeded with synthetic data, for screenshots / design work. Launches in place
@@ -121,8 +128,10 @@ ONLY in a view that writes `$store.x` back (e.g. the pickers, the settings panel
    cards use `Palette.cardStrokeStrong` and pills increase border width under Increase Contrast.
    Keep the default branch byte-identical.
 10. **One `@main` + `-parse-as-library` + the `#if PREVIEW` scene branch** survive any file split.
-11. **`build.sh` stays the build/install path** (compile → bundle → codesign → move to
-    `/Applications`). The preview build is the lone exception: local, never installed.
+11. **`install.sh` stays the friendly source-install entry and `build.sh` stays the underlying
+    build/install path** (compile → bundle → codesign → stage/verify/activate in the selected
+    Applications folder, with the documented safe fallback and rollback). The preview build is the
+    lone exception: local, never installed.
 12. **Swift v5 language mode** (see *Build, test, run*). `Package.swift swiftLanguageModes: [.v5]`
     + `build.sh -swift-version 5`, despite `swift-tools-version` 6.0. Do NOT bump to the Swift 6
     language mode / default-`MainActor` isolation — it re-homes the intentionally-`nonisolated`
@@ -135,7 +144,7 @@ ONLY in a view that writes `$store.x` back (e.g. the pickers, the settings panel
   `build.sh`'s `-target`, while the SDK it links against can be newer. That skew is intentional.
 - **Preview-only code** (synthetic player/market data, offline community fixtures, isolated
   defaults/history/clock/side effects, distinct bundle identity, and destination selection) is
-  `#if PREVIEW` — never ships in release.
+  `#if PREVIEW` — never ships in a production build.
 - **GeckoTerminal pool address is case-sensitive.** `AppConfig.API.geckoPool` = `5wE9YJ…` (mixed
   case). DexScreener lowercases the same address, which GeckoTerminal 404s on — keep the exact case.
   GeckoTerminal OHLCV is free/no-key; the `CandleInterval` set maps 1:1 to its timeframes (minute

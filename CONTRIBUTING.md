@@ -16,7 +16,9 @@ By contributing, you agree that your contribution may be distributed under the r
 
 ## Development setup
 
-You need macOS 14 or newer and Xcode 16 or newer with its Swift 6 toolchain selected:
+You need macOS 14 or newer and a full Xcode 16 or newer installation with its Swift 6 toolchain
+selected. The standalone Command Line Tools are insufficient, but a paid Apple Developer Program
+membership is not required:
 
 ```bash
 sudo xcode-select --switch /Applications/Xcode.app
@@ -27,22 +29,23 @@ swift --version
 Fork and clone the repository, then run:
 
 ```bash
+./install.sh --check
 swift test
 ./build.sh check
 WOC_NO_LAUNCH=1 ./build.sh preview
 WOC_SKIP_RESOURCE_CHECK=1 ./scripts/verify.sh
 ```
 
-Run `./scripts/verify.sh` without the skip before release-sensitive changes; that adds the bounded
-closed-popover CPU and memory check.
+Run `./scripts/verify.sh` without the skip before distribution-sensitive changes; that adds the
+bounded closed-popover CPU and memory check.
 
 ## Project shape
 
 - `Sources/WoCKit/` is the SwiftUI-free, SwiftPM-tested domain layer.
 - `Sources/Views/` and `Sources/App/` contain the native macOS interface and entry point.
 - `Resources/Localizable.xcstrings` owns all user-facing and accessibility copy.
-- `build.sh` is the app build and bundle path; `Package.swift` intentionally builds only WoCKit and
-  its tests.
+- `install.sh` is the friendly source-install entry point; `build.sh` is the lower-level app build
+  and bundle path. `Package.swift` intentionally builds only WoCKit and its tests.
 
 Read [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) before changing store boundaries, refresh behavior,
 persistence, alerts, or popover layout.
@@ -70,7 +73,7 @@ Keep changes focused and explain:
 1. the user-visible outcome;
 2. why the approach is truthful and safe;
 3. tests and preview states exercised; and
-4. any data, compatibility, accessibility, or release implications.
+4. any data, compatibility, accessibility, or distribution implications.
 
 The CI verification job must pass before merge. Maintainers may ask for a smaller change, more test
 coverage, or an updated screenshot when that makes review safer.

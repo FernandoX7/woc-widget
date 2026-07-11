@@ -1,12 +1,55 @@
-# Release process
+# Releases and distribution
 
-Public releases are universal arm64/x86_64 builds, signed with Developer ID, hardened, notarized,
-stapled, and distributed as ZIP and DMG artifacts with SHA-256 checksums. The release bundle and DMG
-also carry the project license, privacy policy, and credits.
+## Current status: source only
 
-Never publish an ad-hoc-signed or unnotarized build.
+WoC Player Count currently publishes source code and release notes, not a prebuilt macOS app, app
+ZIP, or DMG. Users build and install it locally by following
+[LOCAL_INSTALL.md](LOCAL_INSTALL.md). That workflow needs macOS 14+, full Xcode 16+, and no paid
+Apple Developer Program membership. It ad-hoc signs the resulting bundle on the user's own Mac.
 
-## One-time setup
+Do not upload or redistribute an app produced by `install.sh` or `build.sh`. An ad-hoc signature is
+appropriate for a local build but does not establish a distributable developer identity or provide
+Apple notarization. Never instruct users to disable Gatekeeper to run one.
+
+## Publish a source-only GitHub release
+
+A source-only GitHub release provides a stable tag, release notes, and GitHub's automatically
+generated source archives. It does not use an Apple account, signing certificate, or notarization
+service.
+
+1. Start from a clean, up-to-date `main` branch and confirm the intended version metadata and
+   changelog are ready.
+2. Run the complete local gate:
+
+   ```bash
+   ./scripts/verify.sh
+   ./scripts/smoke-live-api.py
+   ```
+
+   The live smoke test is diagnostic because upstream availability must not gate normal CI.
+   Investigate contract failures while distinguishing an upstream outage from a schema regression.
+
+3. Create and push a signed or annotated version tag.
+4. Create a GitHub Release for that tag and clearly label it **Source-only release**. Link to the
+   [local installation guide](LOCAL_INSTALL.md) in the release notes.
+5. Attach no `.app`, application ZIP, or DMG. The generated **Source code (zip)** and **Source code
+   (tar.gz)** links are source archives that users must build locally, not runnable app downloads.
+
+Do not replace a tag after publishing it. If a release points to the wrong source, explain the
+withdrawal, correct the source, and publish a new version rather than silently moving the tag.
+
+## Optional future notarized binary distribution
+
+The repository retains a binary-release pipeline for a future maintainer who deliberately chooses
+to join the paid Apple Developer Program. A public binary release must be universal
+arm64/x86_64, signed with Developer ID, hardened, notarized, stapled, and distributed as ZIP and DMG
+artifacts with SHA-256 checksums. The bundle and DMG also carry the project license, privacy policy,
+and credits.
+
+Nothing in this section is required for local source builds. Never publish an ad-hoc-signed or
+unnotarized binary.
+
+### One-time binary-distribution setup
 
 1. Use macOS 14 or newer with Xcode 16+ selected—not only the standalone Command Line Tools:
 
@@ -31,7 +74,7 @@ Never publish an ad-hoc-signed or unnotarized build.
 Signing certificates, exported identities, API credentials, and notary passwords belong in the
 developer keychain or encrypted CI secrets—never in this repository.
 
-## Prepare a release
+### Prepare a binary release
 
 1. Start from a clean, up-to-date `main` branch.
 2. Choose a Semantic Versioning release number and monotonically increasing build number.
@@ -49,7 +92,7 @@ developer keychain or encrypted CI secrets—never in this repository.
 The live smoke test is diagnostic because upstream availability must not gate normal CI. Investigate
 contract failures before release; do not blindly retry until a real schema regression disappears.
 
-## Build notarized artifacts
+### Build notarized artifacts
 
 ```bash
 DEVELOPER_ID_APPLICATION="Developer ID Application: Example (TEAMID)" \
@@ -72,13 +115,13 @@ The script:
 6. builds, signs, notarizes, staples, and validates the DMG; and
 7. writes SHA-256 checksums for both downloadable artifacts.
 
-This ordering follows Apple's
-[custom notarization workflow](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow).
+This ordering follows Apple's [custom notarization
+workflow](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow).
 
 An intentionally unnotarized local pipeline test requires both a Developer ID identity and
 `ALLOW_UNNOTARIZED_RELEASE=1`. The output is labeled accordingly and must not be uploaded.
 
-## Verify the candidate
+### Verify the binary candidate
 
 Artifacts are written to `release/`:
 
@@ -118,11 +161,12 @@ Confirm:
 - VoiceOver, keyboard chart inspection, and Reduce Motion; and
 - near-zero idle CPU after closing the popover.
 
-## Publish on GitHub
+### Publish binary artifacts on GitHub
 
 1. Commit the version/changelog update and confirm CI passes on `main`.
 2. Create a signed or annotated tag such as `v1.0.0` at that commit.
-3. Create a GitHub Release from the tag using the changelog entry as release notes.
+3. Create a GitHub Release from the tag using the changelog entry as release notes, explicitly
+   describing it as a signed and notarized binary release.
 4. Upload the DMG, ZIP, and checksum file generated by the same release run.
 5. Mark a release as pre-release when it has not completed the full hardware and accessibility
    matrix.
