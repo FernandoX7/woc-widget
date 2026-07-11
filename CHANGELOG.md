@@ -11,8 +11,8 @@ All notable public changes will be recorded here. The project follows
 ### Added
 
 - One-command local preflight, build, install, and launch flow through `./install.sh`.
-- Native menu-bar dashboard for live realm population, local history, `$WOC` market context, and
-  on-demand community data.
+- Native macOS menu bar app for World of ClaudeCraft with live player count, realm status, local
+  history, `$WOC` market context, and on-demand community data.
 - Configurable realm, record, population, market, price-target, and release notifications with
   cooldowns, quiet hours, mute, disable, and permission recovery.
 - Accessible charts, keyboard inspection, Audio Graph descriptors, adaptive typography, and

@@ -1,6 +1,6 @@
 # CLAUDE.md — WoC Player Count
 
-macOS menu-bar app (`LSUIElement`, no Dock icon) showing the live *World of Claudecraft*
+macOS menu-bar app (`LSUIElement`, no Dock icon) showing the live *World of ClaudeCraft*
 player count + `$WOC` price (the spot price in the menu-bar label/header, plus a real OHLC
 **candlestick chart** in the popover). Pure SwiftUI `MenuBarExtra(.window)`. There is **no Xcode
 project**, WidgetKit target, or Dock app—the product is the menu-bar app only, with raw `swiftc`

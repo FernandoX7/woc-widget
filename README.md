@@ -1,4 +1,4 @@
-# WoC Player Count
+# WoC Player Count — a macOS Menu Bar App for World of ClaudeCraft
 
 [![CI](https://github.com/FernandoX7/woc-widget/actions/workflows/ci.yml/badge.svg)](https://github.com/FernandoX7/woc-widget/actions/workflows/ci.yml)
 [![Live API contracts](https://github.com/FernandoX7/woc-widget/actions/workflows/live-api-contracts.yml/badge.svg)](https://github.com/FernandoX7/woc-widget/actions/workflows/live-api-contracts.yml)
@@ -6,13 +6,13 @@
 [![macOS 14+](https://img.shields.io/badge/macOS-14%2B-35d6ed.svg)](https://www.apple.com/macos/)
 
 <p align="center">
-  <img src="scripts/icon-source.png" width="144" alt="WoC Player Count world-and-signal icon">
+  <img src="scripts/icon-source.png" width="144" alt="WoC Player Count macOS menu bar app icon showing a globe and live signal">
 </p>
 
-A beautiful native macOS menu-bar companion for
-[World of ClaudeCraft](https://worldofclaudecraft.com). It keeps live realm population and the
-`$WOC` market visible at a glance, then opens into a focused dashboard for local history, community
-activity, and configurable alerts.
+WoC Player Count is a beautiful, independent, open-source macOS menu bar app for
+[World of ClaudeCraft](https://worldofclaudecraft.com). It shows the live player count and realm
+status, records local population history, follows the `$WOC` token market, and delivers configurable
+alerts from one focused native dashboard.
 
 > **Independent community project.** WoC Player Count is not affiliated with or endorsed by World
 > of ClaudeCraft, Dream Home AI Limited, or Levy Street. It never asks for game credentials or a
@@ -26,9 +26,12 @@ activity, and configurable alerts.
 This is a menu-bar app, not a WidgetKit extension: it has no Dock icon, desktop widget, or separate
 settings window.
 
-![WoC Player Count overview](docs/preview.png)
+![WoC Player Count macOS menu bar dashboard showing World of ClaudeCraft player count, realm status, and population history](docs/preview.png)
 
-## Highlights
+[Play World of ClaudeCraft](https://worldofclaudecraft.com) ·
+[Install WoC Player Count](#install-the-macos-app-from-source)
+
+## World of ClaudeCraft companion features
 
 - **One calm menu-bar signal** — show Players + `$WOC`, Full, Players, or Token. Stale values are
   visibly distinguished and unavailable prices are never presented as live.
@@ -47,7 +50,7 @@ settings window.
 - **Mac-native accessibility** — semantic VoiceOver output, Audio Graph descriptors, keyboard chart
   inspection, Dynamic Type, non-color candle encoding, and system accessibility accommodations.
 
-## Install from source
+## Install the macOS app from source
 
 You need macOS 14 or newer and a full Xcode 16+ installation—not only the standalone Command Line
 Tools. Install Xcode, open it once to finish setup, and then run:
@@ -101,7 +104,7 @@ Observed player history is retained locally for seven days. Settings can export 
 remove both the primary and recovery snapshots. Read [PRIVACY.md](PRIVACY.md) for the complete data
 flow, storage locations, defaults domain, and removal instructions.
 
-## Data sources and disclaimer
+## World of ClaudeCraft and WOC token data sources
 
 - World of ClaudeCraft public APIs provide realm and community data.
 - [DEX Screener](https://dexscreener.com) provides spot and rolling market metrics.

@@ -1,4 +1,4 @@
-# Credits and notices
+# WoC Player Count credits and notices
 
 WoC Player Count is an independently developed community companion. It is not affiliated with,
 endorsed by, sponsored by, or published by World of ClaudeCraft, Dream Home AI Limited, Levy Street,

@@ -1,8 +1,10 @@
-# Build and install locally
+# Build and install WoC Player Count on macOS
 
-WoC Player Count is currently distributed as source code. There is no official prebuilt `.app`,
-ZIP, or DMG to download. Building it on your own Mac is free and does not require a paid Apple
-Developer Program membership, a Developer ID certificate, or notarization credentials.
+WoC Player Count is an independent companion for
+[World of ClaudeCraft](https://worldofclaudecraft.com) that is currently distributed as source
+code. There is no official prebuilt `.app`, ZIP, or DMG to download. Building it on your own Mac is
+free and does not require a paid Apple Developer Program membership, a Developer ID certificate, or
+notarization credentials.
 
 ## Requirements
 

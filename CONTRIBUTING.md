@@ -1,4 +1,4 @@
-# Contributing
+# Contributing to WoC Player Count
 
 Thanks for helping make WoC Player Count more useful, reliable, and delightful. Bug reports,
 accessibility improvements, documentation, tests, and focused feature proposals are welcome.

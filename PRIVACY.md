@@ -1,4 +1,4 @@
-# Privacy
+# WoC Player Count privacy policy
 
 Last updated: July 11, 2026
 

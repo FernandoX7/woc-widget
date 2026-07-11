@@ -1,4 +1,4 @@
-# Security policy
+# WoC Player Count security policy
 
 ## Supported versions
 
