@@ -122,8 +122,10 @@ SOURCE_DEVELOPMENT_REGION="$(plist_value CFBundleDevelopmentRegion "$SOURCE_INFO
 APP_BIN="$APP/Contents/MacOS/$SOURCE_EXECUTABLE"
 
 heading "script checks"
-/bin/bash -n build.sh scripts/verify.sh scripts/lib/verify_helpers.sh \
+/bin/bash -n install.sh build.sh scripts/verify.sh scripts/lib/verify_helpers.sh \
   scripts/tests/verify_helpers_test.sh scripts/release.sh scripts/check-source-invariants.sh
+[[ -x install.sh ]] || { echo "error: install.sh must be executable" >&2; exit 1; }
+./install.sh --check
 scripts/tests/verify_helpers_test.sh
 
 heading "source architecture invariants"
