@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/FernandoX7/woc-widget/security/advisories/new
+    about: Do not disclose exploit details in a public issue.
+  - name: World of ClaudeCraft game support
+    url: https://worldofclaudecraft.com/support
+    about: Account, gameplay, and upstream-service issues belong with the game operator.

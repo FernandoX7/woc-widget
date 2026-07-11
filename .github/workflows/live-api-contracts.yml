@@ -1,0 +1,24 @@
+name: Live API Contracts
+
+on:
+  schedule:
+    # Live upstream availability must never gate a pull request. This runs daily on the default
+    # branch and can also be invoked manually while diagnosing a feed change.
+    - cron: "23 15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: live-api-contracts
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check credential-free public feed contracts
+        run: ./scripts/smoke-live-api.py

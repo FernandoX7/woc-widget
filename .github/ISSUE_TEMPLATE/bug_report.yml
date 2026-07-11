@@ -1,0 +1,63 @@
+name: Bug report
+description: Report reproducible behavior in the WoC Player Count companion
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the app. Do not include passwords, wallet material, private
+        player information, or security exploit details. Report vulnerabilities privately through
+        the repository Security tab.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Find this in Settings → About, or provide the commit hash for a source build.
+      placeholder: "1.0.0 (build 1)"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS and Mac
+      placeholder: "macOS 15.5, Apple silicon"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include what you saw and why it was unexpected.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Open …
+        2. Select …
+        3. Observe …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add sanitized logs, screenshots, selected preview state, or accessibility settings.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for this behavior.
+          required: true
+        - label: I removed private or security-sensitive information.
+          required: true

@@ -1,0 +1,860 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "accessibility.off": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Off"}}}},
+    "accessibility.on": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"On"}}}},
+    "action.contractCopied": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Contract copied"}}}},
+    "action.copyContract": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Copy contract"}}}},
+    "action.discord": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Discord"}}}},
+    "action.exportCSV": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Export CSV"}}}},
+    "action.exportJSON": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Export JSON"}}}},
+    "action.github": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"GitHub"}}}},
+    "action.highScores": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"High scores"}}}},
+    "action.play": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Play now"}}}},
+    "action.wiki": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Wiki"}}}},
+    "alert.advanced.change.gain.body": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Up %.1f%% over %@ at %@ — above your %.1f%% alert."}}}},
+    "alert.advanced.change.gain.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"🚀 $WOC %@ move"}}}},
+    "alert.advanced.change.loss.body": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Down %.1f%% over %@ at %@ — beyond your %.1f%% alert."}}}},
+    "alert.advanced.change.loss.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"📉 $WOC %@ move"}}}},
+    "alert.advanced.population.above.body.one": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1 player is online — your %lld-player alert was reached."}}}},
+    "alert.advanced.population.above.body.other": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%lld players are online — your %lld-player alert was reached."}}}},
+    "alert.advanced.population.above.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"🌍 The realm is bustling"}}}},
+    "alert.advanced.population.below.body.one": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1 player is online — below your %lld-player alert."}}}},
+    "alert.advanced.population.below.body.other": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%lld players are online — below your %lld-player alert."}}}},
+    "alert.advanced.population.below.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"🌙 The realm is quiet"}}}},
+    "alert.advanced.price.above.body": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"$WOC is %@, at or above your %@ target."}}}},
+    "alert.advanced.price.above.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"🎯 $WOC target reached"}}}},
+    "alert.advanced.price.below.body": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"$WOC is %@, at or below your %@ target."}}}},
+    "alert.advanced.price.below.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"🎯 $WOC target reached"}}}},
+    "alert.advanced.release.body": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"A new World of ClaudeCraft release is available."}}}},
+    "alert.advanced.release.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"✨ WoC %@ is here"}}}},
+    "alert.advanced.release.unknown": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"new release"}}}},
+    "alert.window.1h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1-hour"}}}},
+    "alert.window.6h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"6-hour"}}}},
+    "alert.window.24h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"24-hour"}}}},
+    "alert.window.duration.1h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1 hour"}}}},
+    "alert.window.duration.6h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"6 hours"}}}},
+    "alert.window.duration.24h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"24 hours"}}}},
+    "chart.automatic": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Auto"}}}},
+    "chart.candleInterval": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Candle"}}}},
+    "chart.candle.close": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%@ close %@"}}}},
+    "chart.candle.latest": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Latest candle"}}}},
+    "chart.candle.selected": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Selected candle"}}}},
+    "chart.candle.loading.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Loading price history"}}}},
+    "chart.candle.loading.subtitle": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Fetching candles for this view…"}}}},
+    "chart.candle.unavailable.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Price history unavailable"}}}},
+    "chart.candle.unavailable.subtitle": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"The selected candle view couldn’t be loaded."}}}},
+    "chart.candle.gathering.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Gathering price history"}}}},
+    "chart.candle.gathering.subtitle": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"The chart appears when two candles are ready."}}}},
+    "chart.a11y.axis.time": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Time"}}}},
+    "chart.a11y.axis.players": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Players"}}}},
+    "chart.a11y.playerCount.one": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1 player"}}}},
+    "chart.a11y.playerCount.other": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%lld players"}}}},
+    "chart.a11y.playerPoint.one": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1 player, %@"}}}},
+    "chart.a11y.playerPoint.other": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%lld players, %@"}}}},
+    "chart.a11y.series.players": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Players"}}}},
+    "chart.a11y.series.segment": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Players, observed segment %lld"}}}},
+    "chart.crypto.a11y.axis.close": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Close price in U.S. dollars"}}}},
+    "chart.crypto.a11y.axis.open": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Open price"}}}},
+    "chart.crypto.a11y.axis.high": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"High price"}}}},
+    "chart.crypto.a11y.axis.low": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Low price"}}}},
+    "chart.crypto.a11y.series": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Candle close"}}}},
+    "chart.crypto.a11y.point": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%@; open %@, high %@, low %@, close %@, %@ %@ percent"}}}},
+    "chart.metric.open.short": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"O"}}}},
+    "chart.metric.high.short": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"H"}}}},
+    "chart.metric.low.short": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"L"}}}},
+    "chart.metric.close.short": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"C"}}}},
+    "chart.metric.open": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Open"}}}},
+    "chart.metric.high": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"High"}}}},
+    "chart.metric.low": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Low"}}}},
+    "chart.metric.close": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Close"}}}},
+    "chart.resolution": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%@ averages"}}}},
+    "chart.windowCoverage": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"window coverage"}}}},
+    "chart.windowCoverage.help": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Share of the selected time covered by chart windows containing at least one local observation."}}}},
+    "format.percent": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%lld percent"}}}},
+    "duration.compact.10s": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"10s"}}}},
+    "duration.compact.30s": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"30s"}}}},
+    "duration.compact.1m": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1m"}}}},
+    "duration.compact.5m": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"5m"}}}},
+    "duration.compact.15m": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"15m"}}}},
+    "duration.compact.30m": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"30m"}}}},
+    "duration.compact.1h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1h"}}}},
+    "duration.compact.4h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"4h"}}}},
+    "duration.compact.6h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"6h"}}}},
+    "duration.compact.24h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"24h"}}}},
+    "duration.compact.7d": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"7d"}}}},
+    "community.a11y.leader": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Rank %lld, %@, %@"}}}},
+    "community.a11y.leaderNoDetail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Rank %lld, %@"}}}},
+    "community.accounts": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Accounts created"}}}},
+    "community.latestRelease": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Latest release"}}}},
+    "community.noReleases": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"No releases have been published yet"}}}},
+    "community.leaderboard": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Lifetime XP"}}}},
+    "community.level": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Level %lld"}}}},
+    "community.loading": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Loading community…"}}}},
+    "community.noRankings": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"No lifetime rankings yet"}}}},
+    "community.partial": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Some community data couldn't be refreshed"}}}},
+    "community.players": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Players now"}}}},
+    "community.realm": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm"}}}},
+    "community.realms": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realms"}}}},
+    "community.realmType": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm type"}}}},
+    "community.recentReleases": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Recent releases"}}}},
+    "community.releaseAlert.disableHelp": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Turn off new-release alerts"}}}},
+    "community.releaseAlert.enableHelp": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Notify me about new game releases"}}}},
+    "community.releaseAlert.label": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Release alerts"}}}},
+    "community.prestige": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Prestige %lld"}}}},
+    "community.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Around Claudemoon"}}}},
+    "community.unavailable": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Community data is unavailable"}}}},
+    "community.viewRelease": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"View release"}}}},
+    "community.xp": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%@ XP"}}}},
+    "contextualAlert.permissionDenied.help": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Notifications are blocked in macOS Settings. This alert remains enabled."}}}},
+    "contextualAlert.permissionDenied.value": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"On, but blocked by macOS"}}}},
+    "contextualAlert.permissionNeeded.help": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Allow macOS notifications for this enabled alert"}}}},
+    "contextualAlert.permissionNeeded.value": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"On, permission needed"}}}},
+    "contextualAlert.permissionChecking.help": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Checking notification access"}}}},
+    "contextualAlert.permissionChecking.value": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"On, checking permission"}}}},
+    "feed.cached": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Cached"}}}},
+    "feed.cachedCandles": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Showing cached %@ candles"}}}},
+    "feed.live": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Live"}}}},
+    "feed.loading": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Loading"}}}},
+    "feed.retry": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Retry"}}}},
+    "feed.showingCached": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Showing cached data"}}}},
+    "feed.unavailable": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Unavailable"}}}},
+    "feed.waiting": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Waiting"}}}},
+    "market.activity.a11y": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%@ activity, %lld buys and %lld sells"}}}},
+    "market.activity.buys": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%lld%% buys"}}}},
+    "market.activity.sells": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%lld%% sells"}}}},
+    "market.alert.accessibility": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Market alerts, %lld percent over %@"}}}},
+    "market.alert.disableHelp": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Turn off rolling $WOC move alerts"}}}},
+    "market.alert.enableHelp": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Notify me about rolling $WOC moves"}}}},
+    "market.alert.summary": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%lld%% · %@"}}}},
+    "market.a11y.cachedQuote": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Cached. %@"}}}},
+    "market.a11y.quoteLoading": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"$WOC market quote loading."}}}},
+    "market.a11y.quoteUnavailable": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"$WOC market quote unavailable."}}}},
+    "market.change.window": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%@ change %@"}}}},
+    "market.close": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Latest close"}}}},
+    "market.dataSource": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Market data by DEX Screener and GeckoTerminal"}}}},
+    "market.fdv": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Fully diluted value"}}}},
+    "market.feed.chart": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Chart"}}}},
+    "market.feed.quote": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Quote"}}}},
+    "market.feed.unavailableDetail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Some market data could not be refreshed."}}}},
+    "market.liquidity": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Liquidity"}}}},
+    "market.marketCap": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Market cap"}}}},
+    "market.spot": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"$WOC spot"}}}},
+    "market.timeframe": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Market activity window"}}}},
+    "market.tokenSymbol": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"$WOC"}}}},
+    "market.transactions": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Buys / sells"}}}},
+    "market.transactions.window": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%@ buys / sells"}}}},
+    "market.view": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"View market"}}}},
+    "market.volume": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"24h volume"}}}},
+    "market.volume.window": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%@ volume"}}}},
+    "navigation.community": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Community"}}}},
+    "navigation.label": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Dashboard section"}}}},
+    "navigation.market": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"$WOC"}}}},
+    "navigation.overview": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Overview"}}}},
+    "notification.action.disable": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Disable this alert"}}}},
+    "notification.action.muteOneHour": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Mute for 1 hour"}}}},
+    "notification.test.body": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm, record, and $WOC alerts can reach this Mac."}}}},
+    "notification.test.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"WoC notifications are ready"}}}},
+    "rhythm.alert.disableHelp": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Turn off the busy-realm alert"}}}},
+    "rhythm.alert.enableHelp": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Notify me when the realm reaches this population"}}}},
+    "rhythm.alert.threshold": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Alert at %lld"}}}},
+    "rhythm.building": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Building your realm rhythm"}}}},
+    "rhythm.buildingDetail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"A confident activity comparison appears after more local observations."}}}},
+    "rhythm.coverage": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Observed coverage"}}}},
+    "rhythm.coverageValue": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%lld%% observed"}}}},
+    "rhythm.localFootnote": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Recorded locally on this Mac; sleep and quit periods remain gaps."}}}},
+    "rhythm.percentile": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Busier than %lld%% of your observed window"}}}},
+    "rhythm.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm rhythm"}}}},
+    "history.export.failed": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Couldn't export player history"}}}},
+    "menubar.a11y.changeDown": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"down %.1f percent over 24 hours"}}}},
+    "menubar.a11y.changeUnknown": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"24-hour change unavailable"}}}},
+    "menubar.a11y.changeUp": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"up %.1f percent over 24 hours"}}}},
+    "menubar.a11y.full": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"World of ClaudeCraft. %@. WOC spot price %@ dollars, %@."}}}},
+    "menubar.a11y.cached": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Cached, %lld players"}}}},
+    "menubar.a11y.cachedOne": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Cached, 1 player"}}}},
+    "menubar.a11y.onlineOne": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Online, 1 player"}}}},
+    "menubar.a11y.statusAndChange": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"%@. WOC %@."}}}},
+    "menubar.a11y.token": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"WOC spot price %@ dollars, %@."}}}},
+    "menubar.a11y.unavailable": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Unavailable"}}}},
+    "settings.alerts.gains": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Gain alerts"}}}},
+    "settings.alerts.losses": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Loss alerts"}}}},
+    "settings.appearance": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"MENU BAR"}}}},
+    "settings.alerts.cooldown": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Smart alert cooldown"}}}},
+    "settings.alerts.cooldown.off": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Off"}}}},
+    "settings.alerts.cooldown.15m": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"15 min"}}}},
+    "settings.alerts.cooldown.1h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1 hour"}}}},
+    "settings.alerts.cooldown.4h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"4 hours"}}}},
+    "settings.alerts.cooldown.1d": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1 day"}}}},
+    "settings.alerts.population": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Busy realm"}}}},
+    "settings.alerts.populationAtLeast": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Alert at players"}}}},
+    "settings.alerts.priceAbove": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"At or above"}}}},
+    "settings.alerts.priceBelow": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"At or below"}}}},
+    "settings.alerts.priceTargets": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Absolute price targets"}}}},
+    "settings.alerts.quietFrom": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"From"}}}},
+    "settings.alerts.quietHours": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Quiet hours for smart alerts"}}}},
+    "settings.alerts.quietTo": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Until"}}}},
+    "settings.alerts.releases": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"New game releases"}}}},
+    "settings.alerts.rollingWindow": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Rolling market window"}}}},
+    "settings.alerts.window.1h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"1h"}}}},
+    "settings.alerts.window.6h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"6h"}}}},
+    "settings.alerts.window.24h": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"24h"}}}},
+    "settings.approvalRequired": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Approval required in System Settings"}}}},
+    "settings.autoSaved": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Changes save automatically"}}}},
+    "settings.about": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"ABOUT"}}}},
+    "settings.about.dataSources.detail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm and community details come from World of ClaudeCraft’s public APIs. $WOC quotes come from DEX Screener; candles come from GeckoTerminal."}}}},
+    "settings.about.dataSources.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Public data sources"}}}},
+    "settings.about.link.hint": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Opens in your browser"}}}},
+    "settings.about.link.license": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"License"}}}},
+    "settings.about.link.privacy": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"App privacy"}}}},
+    "settings.about.link.support": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Support"}}}},
+    "settings.about.links.detail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Privacy, support, license, and source links belong to this independent companion."}}}},
+    "settings.about.subtitle": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"An independent native companion for the realm, community, and $WOC—together at a glance."}}}},
+    "settings.about.version": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Version %@ · Build %@"}}}},
+    "settings.cancel": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Cancel"}}}},
+    "settings.dataPrivacy": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"DATA & PRIVACY"}}}},
+    "settings.dataPrivacy.clear.cleared": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Local player history cleared."}}}},
+    "settings.dataPrivacy.clear.confirmation.action": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Clear Local History"}}}},
+    "settings.dataPrivacy.clear.confirmation.message": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"This permanently removes player-count samples and your local peak from this Mac. Alert and menu-bar preferences stay intact."}}}},
+    "settings.dataPrivacy.clear.confirmation.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Clear local player history?"}}}},
+    "settings.dataPrivacy.clear.detail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Removes player-count samples and the local peak. Your alert and menu-bar preferences stay intact."}}}},
+    "settings.dataPrivacy.clear.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Clear local history"}}}},
+    "settings.dataPrivacy.export.detail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Save your locally observed player-count history. Exports never include account or wallet data."}}}},
+    "settings.dataPrivacy.export.saved": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Player history saved."}}}},
+    "settings.dataPrivacy.export.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Export player history"}}}},
+    "settings.dataPrivacy.local.detail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Player-count history and your local peak stay on this Mac and are never uploaded by this app."}}}},
+    "settings.dataPrivacy.local.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Stored only on this Mac"}}}},
+    "settings.export": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Data export"}}}},
+    "settings.marketAlerts.explanation": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Rolling alerts compare the selected window; price targets fire when $WOC crosses your chosen level."}}}},
+    "settings.menu.full": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Full"}}}},
+    "settings.menu.players": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Players"}}}},
+    "settings.menu.playersChange": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Players + WOC"}}}},
+    "settings.menu.token": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Token"}}}},
+    "settings.menuBar": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Menu bar"}}}},
+    "settings.notifications": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Notifications"}}}},
+    "settings.notifications.blockedAlerts": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Your enabled alerts are silent because macOS has blocked notifications for this app."}}}},
+    "settings.notifications.category.delivery": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Alert timing"}}}},
+    "settings.notifications.category.game": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Game updates"}}}},
+    "settings.notifications.category.market": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"$WOC market"}}}},
+    "settings.notifications.category.realm": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm activity"}}}},
+    "settings.notifications.checking": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Checking notification access…"}}}},
+    "settings.notifications.allow": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Allow notifications"}}}},
+    "settings.notifications.denied": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Notifications are blocked in System Settings."}}}},
+    "settings.notifications.explanation": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm activity, game updates, and $WOC market alerts share one notification system."}}}},
+    "settings.notifications.open": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Open Notification Settings"}}}},
+    "settings.notifications.test": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Send test"}}}},
+    "settings.notifications.testRequested": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Test request sent to macOS. Banner display follows your system notification settings."}}}},
+    "settings.openLoginItems": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Open Login Items"}}}},
+    "settings.system": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"System"}}}},
+    "stat.change30m": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"30m change"}}}},
+    "stat.localRecord": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Local record"}}}},
+    "stat.rangeAverage": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Range avg"}}}},
+    "stat.todayHigh": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Today high"}}}},
+    "alert.crypto.dump.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The price dropped %lld%% to $%@."
+          }
+        }
+      }
+    },
+    "alert.crypto.dump.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📉 $WOC is Down"
+          }
+        }
+      }
+    },
+    "alert.crypto.pump.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The price just surged %lld%% to $%@!"
+          }
+        }
+      }
+    },
+    "alert.crypto.pump.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🚀 $WOC is Pumping!"
+          }
+        }
+      }
+    },
+    "alert.peak.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld players online — a new record."
+          }
+        }
+      }
+    },
+    "alert.peak.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🏆 New peak on %@!"
+          }
+        }
+      }
+    },
+    "alert.status.down.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0 players online or the realm is unreachable."
+          }
+        }
+      }
+    },
+    "alert.status.down.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "⚠️ %@ looks down"
+          }
+        }
+      }
+    },
+    "alert.status.up.body.one": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 player online now."
+          }
+        }
+      }
+    },
+    "alert.status.up.body.other": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld players online now."
+          }
+        }
+      }
+    },
+    "alert.status.up.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "✅ %@ is back"
+          }
+        }
+      }
+    },
+    "app.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WoC Player Count"
+          }
+        }
+      }
+    },
+    "badge.live": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LIVE"
+          }
+        }
+      }
+    },
+    "badge.offline": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OFFLINE"
+          }
+        }
+      }
+    },
+    "badge.sync": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYNC"
+          }
+        }
+      }
+    },
+    "chart.a11y.summary": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Players over time. Latest %lld, peak %lld."
+          }
+        }
+      }
+    },
+    "chart.crypto.a11y.summary": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$WOC price over time, trending %@. Latest %@, high %@, low %@."
+          }
+        }
+      }
+    },
+    "trend.up": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "up"
+          }
+        }
+      }
+    },
+    "trend.down": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "down"
+          }
+        }
+      }
+    },
+    "chart.placeholder.subtitle": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "the chart fills in as samples arrive"
+          }
+        }
+      }
+    },
+    "chart.placeholder.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gathering data…"
+          }
+        }
+      }
+    },
+    "chart.range": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RANGE"
+          }
+        }
+      }
+    },
+    "chart.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PLAYERS OVER TIME"
+          }
+        }
+      }
+    },
+    "chart.cryptoTitle": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$WOC PRICE"
+          }
+        }
+      }
+    },
+    "error.connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connection error"
+          }
+        }
+      }
+    },
+    "error.generic": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't load status"
+          }
+        }
+      }
+    },
+    "error.noInternet": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No internet connection"
+          }
+        }
+      }
+    },
+    "error.timedOut": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server timed out"
+          }
+        }
+      }
+    },
+    "error.unreachable": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't reach server"
+          }
+        }
+      }
+    },
+    "footer.quitHelp": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quit WoC Player Count"
+          }
+        }
+      }
+    },
+    "footer.refresh": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh"
+          }
+        }
+      }
+    },
+    "footer.settingsHelp": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "header.online": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "online"
+          }
+        }
+      }
+    },
+    "menubar.a11y.offline": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offline"
+          }
+        }
+      }
+    },
+    "menubar.a11y.online": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online, %lld players"
+          }
+        }
+      }
+    },
+    "menubar.a11y.syncing": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Syncing"
+          }
+        }
+      }
+    },
+    "realm.fallback": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "World of Claudecraft"
+          }
+        }
+      }
+    },
+    "settings.backHelp": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back"
+          }
+        }
+      }
+    },
+    "settings.crypto": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$WOC MARKET ALERTS"
+          }
+        }
+      }
+    },
+    "settings.cryptoAlerts": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rolling change alerts"
+          }
+        }
+      }
+    },
+    "settings.cryptoRefresh": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$WOC market refresh"
+          }
+        }
+      }
+    },
+    "settings.done": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "settings.general": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "REFRESH"
+          }
+        }
+      }
+    },
+    "settings.launchAtLogin": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launch at login"
+          }
+        }
+      }
+    },
+    "settings.peakAlerts": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New peak record"
+          }
+        }
+      }
+    },
+    "settings.playerRefresh": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Player refresh"
+          }
+        }
+      }
+    },
+    "settings.serverAlerts": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server up / down"
+          }
+        }
+      }
+    },
+    "settings.threshold": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alert threshold"
+          }
+        }
+      }
+    },
+    "settings.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SETTINGS"
+          }
+        }
+      }
+    },
+    "welcome.alerts.detail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Smart alerts are ready when you are. We never ask automatically—notification permission remains your choice."}}}},
+    "welcome.alerts.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Smart alerts, when you want them"}}}},
+    "welcome.dismiss": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Got it"}}}},
+    "welcome.dismiss.help": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Hides this welcome on future visits"}}}},
+    "welcome.eyebrow": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"YOUR MENU-BAR COMPANION"}}}},
+    "welcome.history.detail": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"History stays on this Mac. Sleep or quitting creates natural gaps—we never fill them in."}}}},
+    "welcome.history.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Private, honest history"}}}},
+    "welcome.signal.accessibility": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm population and $WOC market context, kept together."}}}},
+    "welcome.signal.market": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"$WOC market"}}}},
+    "welcome.signal.realm": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm population"}}}},
+    "welcome.subtitle": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Live population, local rhythm, and market context in one calm glance."}}}},
+    "welcome.title": {"extractionState":"manual","localizations":{"en":{"stringUnit":{"state":"translated","value":"Realm activity + $WOC, beautifully together"}}}},
+    "updated.hours": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "updated %lldh ago"
+          }
+        }
+      }
+    },
+    "updated.justNow": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "updated just now"
+          }
+        }
+      }
+    },
+    "updated.minutes": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "updated %lldm ago"
+          }
+        }
+      }
+    },
+    "updated.never": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "never"
+          }
+        }
+      }
+    },
+    "updated.seconds": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "updated %llds ago"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

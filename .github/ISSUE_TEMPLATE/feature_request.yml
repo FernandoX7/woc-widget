@@ -1,0 +1,34 @@
+name: Feature request
+description: Propose a focused improvement to the independent companion
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the user need before proposing the interface.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+      description: Explain how the feature should feel in a small menu-bar app.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Product constraints
+      options:
+        - label: This can work without game credentials, wallet access, or browser-session scraping.
+          required: true
+        - label: This preserves honest live/cached/unavailable data states.
+          required: true
+        - label: I searched existing issues for a similar request.
+          required: true
