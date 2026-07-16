@@ -1,5 +1,9 @@
 # Build and install WoC Player Count on macOS
 
+This guide covers the macOS version in this repository. Linux users should use the separate
+[WoC Player Count for Linux](https://github.com/FernandoX7/woc-widget-linux), which provides Debian
+and AppImage downloads as well as Linux-specific installation instructions.
+
 WoC Player Count is an independent companion for
 [World of ClaudeCraft](https://worldofclaudecraft.com) that is currently distributed as source
 code. There is no official prebuilt `.app`, ZIP, or DMG to download. Building it on your own Mac is

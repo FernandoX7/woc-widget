@@ -4,6 +4,7 @@
 [![Live API contracts](https://github.com/FernandoX7/woc-widget/actions/workflows/live-api-contracts.yml/badge.svg)](https://github.com/FernandoX7/woc-widget/actions/workflows/live-api-contracts.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-7c5cff.svg)](LICENSE)
 [![macOS 14+](https://img.shields.io/badge/macOS-14%2B-35d6ed.svg)](https://www.apple.com/macos/)
+[![Linux version](https://img.shields.io/badge/Linux-available-fcc624.svg)](https://github.com/FernandoX7/woc-widget-linux)
 
 <p align="center">
   <img src="scripts/icon-source.png" width="144" alt="WoC Player Count macOS menu bar app icon showing a globe and live signal">
@@ -13,6 +14,11 @@ WoC Player Count is a beautiful, independent, open-source macOS menu bar app for
 [World of ClaudeCraft](https://worldofclaudecraft.com). It shows the live player count and realm
 status, records local population history, follows the `$WOC` token market, and delivers configurable
 alerts from one focused native dashboard.
+
+> **Looking for Linux?** A Linux panel and tray version is available in the
+> [woc-widget-linux repository](https://github.com/FernandoX7/woc-widget-linux), with Debian and
+> AppImage downloads on its [Releases page](https://github.com/FernandoX7/woc-widget-linux/releases).
+> The source and installation instructions in this repository are for macOS.
 
 > **Independent community project.** WoC Player Count is not affiliated with or endorsed by World
 > of ClaudeCraft, Dream Home AI Limited, or Levy Street. It never asks for game credentials or a
@@ -29,7 +35,8 @@ settings window.
 ![WoC Player Count macOS menu bar dashboard showing World of ClaudeCraft player count, realm status, and population history](docs/preview.png)
 
 [Play World of ClaudeCraft](https://worldofclaudecraft.com) ·
-[Install WoC Player Count](#install-the-macos-app-from-source)
+[Install on macOS](#install-the-macos-app-from-source) ·
+[Get the Linux version](https://github.com/FernandoX7/woc-widget-linux)
 
 ## World of ClaudeCraft companion features
 

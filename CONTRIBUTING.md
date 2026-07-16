@@ -16,6 +16,9 @@ By contributing, you agree that your contribution may be distributed under the r
 
 ## Development setup
 
+This repository contains the native macOS app. To contribute to the Linux panel and tray version,
+use the [woc-widget-linux repository](https://github.com/FernandoX7/woc-widget-linux).
+
 You need macOS 14 or newer and a full Xcode 16 or newer installation with its Swift 6 toolchain
 selected. The standalone Command Line Tools are insufficient, but a paid Apple Developer Program
 membership is not required:

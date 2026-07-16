@@ -2,7 +2,11 @@
 
 ## Current status: source only
 
-WoC Player Count currently publishes source code and release notes, not a prebuilt macOS app, app
+This document describes releases from the macOS repository. The separately maintained
+[Linux version](https://github.com/FernandoX7/woc-widget-linux) publishes beta Debian and AppImage
+packages from its own GitHub Releases page.
+
+The macOS version currently publishes source code and release notes, not a prebuilt macOS app, app
 ZIP, or DMG. Users build and install it locally by following
 [LOCAL_INSTALL.md](LOCAL_INSTALL.md). That workflow needs macOS 14+, full Xcode 16+, and no paid
 Apple Developer Program membership. It ad-hoc signs the resulting bundle on the user's own Mac.
